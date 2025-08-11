@@ -1,0 +1,169 @@
+
+/* JARVIS AI Assistant Styles */
+
+:root {
+    --jarvis-blue: #00d4ff;
+    --jarvis-dark: #0e1117;
+    --jarvis-gray: #262730;
+    --jarvis-light: #fafafa;
+    --jarvis-green: #00ff00;
+    --jarvis-red: #ff0000;
+    --jarvis-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+/* Main container styling */
+.main-container {
+    background: linear-gradient(135deg, var(--jarvis-dark) 0%, #1a1a2e 100%);
+    min-height: 100vh;
+    color: var(--jarvis-light);
+}
+
+/* Header animations */
+.jarvis-header {
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px var(--jarvis-blue);
+    }
+    to {
+        text-shadow: 0 0 20px var(--jarvis-blue), 0 0 30px var(--jarvis-blue);
+    }
+}
+
+/* Button styling */
+.jarvis-button {
+    background: linear-gradient(45deg, var(--jarvis-blue), #0088cc);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--jarvis-shadow);
+}
+
+.jarvis-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 212, 255, 0.5);
+}
+
+/* Chat bubble animations */
+.chat-message {
+    animation: slideIn 0.3s ease-out;
+    margin-bottom: 10px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Voice indicator */
+.voice-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+}
+
+.voice-active {
+    background-color: var(--jarvis-green);
+}
+
+.voice-inactive {
+    background-color: var(--jarvis-red);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 currentColor;
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+/* Sidebar styling */
+.sidebar {
+    background: rgba(38, 39, 48, 0.95);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid var(--jarvis-blue);
+}
+
+/* Quick command buttons */
+.quick-command {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 16px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid var(--jarvis-blue);
+    color: var(--jarvis-light);
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.quick-command:hover {
+    background: rgba(0, 212, 255, 0.2);
+    transform: scale(1.02);
+}
+
+/* Status indicators */
+.status-online {
+    color: var(--jarvis-green);
+}
+
+.status-offline {
+    color: var(--jarvis-red);
+}
+
+/* Loading animation */
+.loading-dots {
+    display: inline-block;
+}
+
+.loading-dots::after {
+    content: '';
+    animation: dots 1.5s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 10px;
+    }
+    
+    .jarvis-header {
+        font-size: 2em;
+    }
+    
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100vh;
+        transition: left 0.3s ease;
+    }
+    
+    .sidebar.open {
+        left: 0;
+    }
+}
