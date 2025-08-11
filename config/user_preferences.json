@@ -1,0 +1,20 @@
+
+{
+    "voice_enabled": true,
+    "wake_word": "jarvis",
+    "confidence_threshold": 0.7,
+    "response_speed": 1.0,
+    "theme": "dark",
+    "auto_save_conversations": true,
+    "max_conversation_history": 100,
+    "voice_settings": {
+        "rate": 200,
+        "volume": 0.9,
+        "voice_id": 0
+    },
+    "api_keys": {
+        "openweather": "",
+        "openai": "",
+        "google_speech": ""
+    }
+}
