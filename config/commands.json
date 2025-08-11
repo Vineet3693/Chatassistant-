@@ -1,0 +1,36 @@
+
+{
+    "system_commands": {
+        "open_calculator": ["open calculator", "launch calculator", "start calc"],
+        "open_notepad": ["open notepad", "launch notepad", "start notepad"],
+        "open_browser": ["open browser", "launch chrome", "start firefox"],
+        "shutdown": ["shutdown", "turn off", "power down"],
+        "restart": ["restart", "reboot", "reset system"]
+    },
+    "information_queries": {
+        "time": ["time", "what time", "current time", "clock"],
+        "date": ["date", "what date", "today", "current date"],
+        "weather": ["weather", "temperature", "forecast", "climate"]
+    },
+    "responses": {
+        "greetings": [
+            "Hello! I'm JARVIS, your AI assistant. How can I help you today?",
+            "Greetings! JARVIS at your service. What can I do for you?",
+            "Hi there! Ready to assist you with anything you need.",
+            "Good day! JARVIS here, ready for your commands."
+        ],
+        "farewells": [
+            "Goodbye! Feel free to call on me anytime you need assistance.",
+            "See you later! I'll be here whenever you need help.",
+            "Until next time! Stay safe and productive.",
+            "Farewell! It was a pleasure assisting you today."
+        ],
+        "jokes": [
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "Why did the AI go to therapy? It had too many deep learning issues!",
+            "What do you call a computer that sings? A-Dell!",
+            "Why don't robots ever panic? They have great artificial composure!",
+            "What's an AI's favorite type of music? Algo-rhythms!"
+        ]
+    }
+}
