@@ -1,0 +1,38 @@
+
+{
+    "error_messages": {
+        "command_not_found": "I'm sorry, I didn't understand that command. Could you please rephrase?",
+        "system_error": "I encountered a system error. Please try again later.",
+        "permission_denied": "I don't have permission to perform that action.",
+        "network_error": "I'm having trouble connecting to external services."
+    },
+    "success_messages": {
+        "command_executed": "Command executed successfully!",
+        "file_opened": "File opened successfully!",
+        "task_completed": "Task completed!",
+        "settings_saved": "Settings have been saved successfully."
+    },
+    "conversation_starters": [
+        "Hello! I'm JARVIS, your personal AI assistant. How can I help you today?",
+        "Good day! I'm ready to assist you with any tasks or questions you might have.",
+        "Hi there! What would you like me to help you with?",
+        "Greetings! I'm JARVIS, at your service. What can I do for you?"
+    ],
+    "help_responses": [
+        "I can help you with various tasks like opening applications, providing information, performing calculations, and more!",
+        "Try asking me to open an application, tell you the time, perform a calculation, or tell you a joke!",
+        "I'm here to make your computer experience easier. Just tell me what you need!"
+    ],
+    "personality_responses": {
+        "compliments": [
+            "Thank you! I appreciate your kind words.",
+            "That's very nice of you to say!",
+            "I'm glad I could be helpful!"
+        ],
+        "casual_chat": [
+            "I'm doing well, thank you for asking! How are you?",
+            "I'm always ready to help and learn new things!",
+            "Every day is a good day when I can assist users like you!"
+        ]
+    }
+}
